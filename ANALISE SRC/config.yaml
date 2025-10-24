@@ -1,0 +1,11 @@
+START_DATE: "2025-07-01 08:00:00"
+NUM_OS: 100
+SEED: 42
+CHANCE_ATRASO: 0.35
+TIPOS_SERVICO: ["Preventiva", "Corretiva", "Garantia"]
+
+ETAPAS:
+  CHECK_IN_TO_DIAG: {min: 1.0, max: 3.0, nome: "Espera/Diagnóstico Inicial"}
+  DIAG_TO_QUOTATION: {min: 0.5, max: 2.0, nome: "Elaboração Orçamento"}
+  QUOTATION_TO_START: {min: 2.0, max: 15.0, nome: "Aprovação Cliente/Espera Peças"}
+  START_TO_REPAIR_END: {min: 5.0, max: 30.0, nome: "Reparo na Baia"}
